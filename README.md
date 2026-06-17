@@ -1,6 +1,4 @@
-<<<<<<< HEAD
- 
-=======
+
 # Java DSA Bootcamp
 
 This repository contains my solutions, notes, and practice programs completed during the Java DSA Bootcamp.
