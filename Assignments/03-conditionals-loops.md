@@ -31,6 +31,152 @@
 all.
 26. Addition Of Two Numbers
 
+Answer:
+package Conditional_statements_loops;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		
+		/*System.out.println("area of circle");
+		
+		float r=in.nextFloat();
+	    double area=0;
+	    area=(3.14)*r*r;
+	    System.out.println(area);*/
+	    
+	    
+        /*System.out.println("area of triangle");
+		
+		float b=in.nextFloat();
+		float h=in.nextFloat();
+	    double area=0.5*b*h;
+	    System.out.println(area);*/
+		
+        /*System.out.println("area of Isosceles Triangle");
+		
+		float base=in.nextFloat();
+		float side=in.nextFloat();
+		if (2 * side <= base) {
+		    System.out.println("Invalid Isosceles Triangle");
+		} else {
+		    double area = (base * Math.sqrt(4 * side * side - base * base)) / 4;
+		    System.out.println("Area = " + area);
+		}*/
+		
+       /*System.out.println("area of rhombus");
+		
+		float d1=in.nextFloat();
+		float d2=in.nextFloat();
+	    double area=(d1 * d2)/2;
+	    System.out.println(area);*/
+		
+      /*System.out.println("area of Equilateral Triangle");
+		
+		float side=in.nextFloat();
+		
+	    double area=double area = (Math.sqrt(3) / 4) * side * side;
+	    System.out.println(area);*/
+		
+       /*	System.out.println("Volume of Sphere");
+		
+		float r=in.nextFloat();
+		
+	    double area=(4.0/3.0)*Math.PI*r*r*r;
+	    System.out.println(area);*/
+	    
+		/*Fibonacci series
+		int n=in.nextInt();
+		int a=0;
+		int b=1;
+		int count=2;
+		
+		while(count<=n) {
+			int temp=b;
+			b=b+a;
+			a=temp;
+			count++;
+		}
+		System.out.println(b);*/
+		
+		/*System.out.println("Subtract the Product and Sum of Digits of an Integer");
+		
+		int a=in.nextInt();
+		int b=in.nextInt();
+		
+		int sum=a+b;
+		System.out.println(sum);
+		int product=a*b;
+		System.out.println(product);
+		
+		int result=sum-product;
+		System.out.println(result);*/
+		
+		/*System.out.println("Enter numbers (0 to stop):");
+
+		int sum = 0;
+ 
+	
+		while (true) {
+		    int num = in.nextInt();
+
+		    if (num == 0) {
+		        break;
+		    }
+
+		    sum += num;
+		}
+
+		System.out.println("Sum = " + sum);*/
+		
+		
+		/*System.out.println("Take integer inputs "
+		+ "till the user enters 0 and print the largest number from\r\n"+ "all.");
+
+		int num=in.nextInt();
+		if(num==0){
+			System.out.print("no number is entered");
+			return;
+			
+		}
+		
+		int large=num;
+		
+		while(true) {
+			 num=in.nextInt();
+			
+			if(num==0) {
+				break;
+			}
+			
+			if(num>large) {
+				large=num;
+			}
+			 
+		}
+		System.out.println("Largest number: " + large);*/
+		
+		
+		System.out.println("Input a number and print all the factors of that number (use loops).");
+		
+		int num=in.nextInt();
+		
+		for(int i=1; i<=num;i++) {
+			if(num % i==0) {
+			 System.out.println(i);
+			}
+		}
+		 
+			    
+		
+		
+	}
+
+}
+
+
 ### Intermediate Java Programs
 1. Factorial Program In Java
 2. Calculate Electricity Bill
