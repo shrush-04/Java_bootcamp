@@ -13,6 +13,44 @@
 6. [Write a program to print the circumference and area of a circle of radius entered by user by defining your own method.](https://beginnersbook.com/2014/01/java-program-to-calculate-area-and-circumference-of-circle/)
 
 7. [Define a method to find out if a number is prime or not.](https://www.geeksforgeeks.org/java-program-to-check-if-a-number-is-prime-or-not/)
+Answer:
+package Fuctions_and_Methods;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("Define a method to find out if a number is prime or not");
+		Scanner in=new Scanner(System.in);
+		int n=in.nextInt();
+		boolean ans=isPrime(n);
+		System.out.println(ans);
+	}
+	
+	static boolean isPrime(int a){
+		if(a<=1) {
+			return false;
+			
+		}
+		int c=2;
+		while(c*c<=a) {
+			if(a%c==0) {
+				return false;
+			}
+			c++;
+			
+			
+		}
+		return c*c>a;
+		
+		
+	}
+	
+	
+	}
+
+
+
 
 8. [Write a program that will ask the user to enter his/her marks (out of 100). Define a method that will display grades according to the marks entered as below:](https://www.techcrashcourse.com/2017/02/java-program-to-calculate-grade-of-students.html) <br/>
 <pre> 
