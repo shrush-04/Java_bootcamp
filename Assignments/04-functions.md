@@ -64,6 +64,49 @@ Marks        Grade
 <=40          Fail 
 </pre>
 
+package Fuctions_and_Methods;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("Write a program that will ask the user to enter his/her marks (out of 100). "
+				+ "Define a method that will display grades according to the marks entered as below:");
+		Scanner in=new Scanner(System.in);
+		System.out.println("enter a marks");
+		int marks=in.nextInt();
+		grade(marks);
+		
+	}
+	
+	static void grade(int marks){
+		 if (marks < 0 || marks > 100) {
+	            System.out.println("Invalid marks");
+	        } else if (marks >= 90) {
+	            System.out.println("AA");
+	        } else if (marks >= 70) {
+	            System.out.println("BB");
+	        } else if (marks >= 60) {
+	            System.out.println("CC");
+	        } else if (marks >= 50) {
+	            System.out.println("DD");
+	        }else if (marks <= 40) {
+	            System.out.println("fail");
+	        }
+	        
+	        }
+			
+		
+		
+		
+		
+	}
+	
+	
+
+
+
+
 9. [Write a program to print the factorial of a number by defining a method named 'Factorial'.](https://www.javatpoint.com/factorial-program-in-java)
 Factorial of any number n is represented by n! and is equal to 1 * 2 * 3 * .... * (n-1) *n. E.g.- <br/>
 <pre>
