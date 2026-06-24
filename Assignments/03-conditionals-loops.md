@@ -179,21 +179,154 @@ public class Main {
 
 ### Intermediate Java Programs
 1. Factorial Program In Java
+Answer:
+package Conditional_statements_loops;
+
+import java.util.Scanner;
+
+public class Factorial {
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		System.out.println("enter the number");
+		
+		int n= in.nextInt();
+		long factorial=1;
+		
+		for(int i=1;i<=n;i++) {
+			factorial*=i;
+			
+		}
+		System.out.println(factorial);
+		in.close();
+		
+	}
+
+}
+
 2. Calculate Electricity Bill
+
 3. Calculate Average Of N Numbers
+Answer:
+package Conditional_statements_loops;
+
+import java.util.Scanner;
+
+public class Calculate_average {
+	public static void main(String[] args) {
+		System.out.println("Calculate average N number ");
+		Scanner input =new Scanner(System.in);
+		System.out.println("enter the how many numbers");
+		int  n=input.nextInt();
+		int [] arr=new int[n];
+		int sum=0;
+		System.out.println("enter the numbers");
+		for(int i=0;i<n;i++) {
+			 arr[i]=input.nextInt();
+			 sum+=arr[i];
+			 
+			
+		}
+		
+		double average=(double)sum/n;
+		System.out.println(average);
+		
+		input.close();
+		
+		
+		
+		
+	
+		}
+
+}
+
 4. Calculate Discount Of Product
+answer:
+package Conditional_statements_loops;
+
+import java.util.Scanner;
+
+public class Calculate_discount {
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		System.out.println("Calculate Discount Of Product");
+		System.out.println("Calculate amount Of Product");
+		float amount=in.nextFloat();
+		System.out.println("Calculate Discount Of Product");
+		float discount=in.nextFloat();
+		
+		float ans=amount*10/100;
+		System.out.println(ans);
+		
+		float total_to_give=amount-ans;
+		System.out.println(total_to_give);
+		
+		
+		
+
+		
+		
+
+}
+}
+
+If you want to enter the product amount and the discount amount, and then calculate what percentage discount you got, use this formula:
+
+Discount Percentage=
+Original Amount/Discount Amount×100
+
+
+
 5. Calculate Distance Between Two Points 
+formula:
+double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
 6. Calculate Commission Percentage
+formula:
+If you know the sales amount and commission earned:
+
+Commission Percentage=Sales Amount/Commission*10
+or
+Commission Amount=Commission Percentage/100	​×Sales Amount
+
 7. Power In Java
+double result = Math.pow(a, b);
+
 8. Calculate Depreciation of Value
 9. Calculate Batting Average
+formula:
+Batting Average=Number of Times Out/Total Runs​
+
 10. Calculate CGPA Java Program
+CGPA=Sum of Grade Points​/Number of Subjects  or percentage =cgpa*9.5
+
 11. Compound Interest Java Program
 12. Calculate Average Marks
 13. Sum Of N Numbers
 14. Armstrong Number In Java
 15. Find Ncr & Npr
 16. Reverse A String In Java
+answer:
+package Conditional_statements_loops;
+
+import java.util.Scanner;
+
+public class Revers_string {
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		System.out.println("Reverse A String In Java");
+		String str=in.nextLine();
+		
+		String reversed="";
+		for(int i=str.length()-1;i>=0;i--) {
+			reversed+=str.charAt(i);
+		}
+		System.out.println("Reversed String: " + reversed);
+		in.close();
+	}
+
+}
+
 17. Find if a number is palindrome or not 
 18. Future Investment Value
 19. HCF Of Two Numbers Program
